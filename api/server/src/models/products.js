@@ -9,12 +9,7 @@ module.exports = (sequelize, DataTypes) => {
   products.associate = function(models) {
     // associations can be defined here
   };
-  // sequelize.sync().then(()=>products.create({
-  //   name: "Chá",
-  //   price: 5,
-  //   breakfast: true,
-  //   itemtype: "drink" 
-  // }))
+
   return products;
 };
 
