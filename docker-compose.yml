@@ -5,11 +5,11 @@ services:
     image: node:12-alpine
     container_name: bq-api-node1
     command: sh -c "npm run migrate && npm run dev"
-    working_dir: /app
+    working_dir: /api/server/src
     ports:
       - "3000:3000"
     volumes:
-      - ./:/app:cached
+      - ./:/api:cached
     networks:
       - bq-network
     depends_on:
