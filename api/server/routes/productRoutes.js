@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import ProductController from '../controllers/ProductController'
+import ProductController from '../controllers/ProductController';
 
 const router = Router()
 router.get('/', ProductController.getAll)
@@ -8,4 +8,4 @@ router.post('/', ProductController.postProduct)
 router.put('/:id', ProductController.updatedProduct)
 router.delete('/:id', ProductController.deleteProduct)
 
-export default router
+export default router;

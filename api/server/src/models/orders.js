@@ -1,8 +1,8 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const orders = sequelize.define('orders', {
-    clientName: DataTypes.STRING,
-    table: DataTypes.INTEGER,
+    client_name: DataTypes.STRING,
+    client_table: DataTypes.INTEGER,
     status: DataTypes.STRING
   }, {});
   orders.associate = function(models) {
