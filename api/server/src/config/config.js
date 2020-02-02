@@ -7,6 +7,7 @@ module.exports = {
     "database": "burgerqueen",
     "host": "db",
     "dialect": "postgres",
+    "operatorsAliases": false
     
   },
   "test": {
