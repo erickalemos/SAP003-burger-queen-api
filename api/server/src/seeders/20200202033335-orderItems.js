@@ -7,22 +7,13 @@ module.exports = {
       Return a promise to correctly handle asynchronicity.
 
       Example:*/
-      return queryInterface.bulkInsert('People', [
+      return queryInterface.bulkInsert('orderItem', [
         {
-          clientName: 'Maria Eduarda',
-          table: 5,
-          status: 'pending'
+          productId: 5,
+          orderId: 2,
+          quantity: 5
         }
-        {
-          clientName: 'Igor',
-          table: 6,
-          status: 'pending'
-        }
-        {
-          clientName: 'Ana Cláudia',
-          table: 5,
-          status: 'pending'
-        }
+       
       ], {});
     
   },
@@ -32,8 +23,8 @@ module.exports = {
       Add reverting commands here.
       Return a promise to correctly handle asynchronicity.
 
-      Example:
-      return queryInterface.bulkDelete('People', null, {});
-    */
+      Example:*/
+      return queryInterface.bulkDelete('orderItem', null, {});
+    
   }
 };

@@ -30,6 +30,4 @@ const deleteProduct = async (req,res) => {
     res.json(products) 
 }
 
-
-
 export default {getAll, getId, postProduct, updatedProduct, deleteProduct}
