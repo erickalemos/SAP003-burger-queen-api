@@ -3,14 +3,12 @@ import models from'../src/models';
 const getAll = async (req, res)=>{
     const products = await models.products.findAll({raw:true})
     res.json(products)
-    
 }
 
 const getId = async (req, res)=>{
     const {id}= req.params
     const products = await models.products.findOne({where:{id:Number(id)}})
     res.json(products)
-    
 }
 
 const postProduct = async (req, res) => {
